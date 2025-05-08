@@ -27,10 +27,13 @@ Save the file using "ESCAPE + :wq!"
 terraform init
 ```
 ```
-terraform plan
+terraform import aws_instance.test_instance <***Resource-ID***>
 ```
 ```
-terraform apply
+terraform state list
+```
+```
+terraform state show aws_instance.test_instance
 ```
 ```
 terraform destroy
